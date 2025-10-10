@@ -39,7 +39,11 @@ android {
     }
 }
 
+val unityLibraryAar = File(rootDir, "libs/unity/unityLibrary-release.aar")
+
 dependencies {
+
+    implementation(files(unityLibraryAar))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
