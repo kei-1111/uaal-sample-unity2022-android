@@ -1,5 +1,6 @@
 package io.github.kei_1111.uaal_sample
 
+import android.R.attr.name
 import android.R.attr.onClick
 import android.R.attr.text
 import android.os.Bundle
@@ -18,6 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.viewinterop.AndroidView
 import com.unity3d.player.UnityPlayer
+import com.unity3d.player.UnityPlayer.UnitySendMessage
 import io.github.kei_1111.uaal_sample.ui.theme.UaalsampleTheme
 
 class MainActivity : ComponentActivity() {
@@ -45,7 +47,9 @@ class MainActivity : ComponentActivity() {
                             .safeGesturesPadding()
                     ) {
                         Button(
-                            onClick = {},
+                            onClick = {
+                                UnitySendMessage(UnityObject.SAMPLE_MANAGER.objectName, UnityMethod.SPAWN_OBJECT.methodName, "")
+                            },
                             modifier = Modifier.align(Alignment.BottomCenter)
                         ) {
                             Text(
