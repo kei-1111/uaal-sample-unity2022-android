@@ -1,6 +1,7 @@
 package io.github.kei_1111.uaal_sample
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -15,10 +16,15 @@ import androidx.compose.ui.viewinterop.AndroidView
 import com.unity3d.player.UnityPlayer
 import com.unity3d.player.UnityPlayer.UnitySendMessage
 import io.github.kei_1111.uaal_sample.ui.theme.UaalsampleTheme
+import java.lang.ref.WeakReference
 
-class MainActivity : ComponentActivity() {
+class MainActivity : ComponentActivity(), UnityMessageReceiver.Listener {
 
     private var unityPlayer: UnityPlayer? = null
+
+    init {
+        UnityMessageReceiver.listener = WeakReference(this)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,6 +60,10 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+    }
+
+    override fun onMessageReceived(message: String) {
+        Toast.makeText(this, message + "個落としました", Toast.LENGTH_SHORT).show()
     }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
