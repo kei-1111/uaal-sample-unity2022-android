@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "uaal-sample-unity2022-android"
 include(":app")
+include(":unityLibrary")
+project(":unityLibrary").projectDir = File("unityLibrary")
