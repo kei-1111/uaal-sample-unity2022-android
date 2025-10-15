@@ -39,7 +39,12 @@ android {
     }
 }
 
+val unityLibraryDir = project(":unityLibrary").projectDir.resolve("libs")
+
 dependencies {
+
+    implementation(project(":unityLibrary"))
+    implementation(fileTree(mapOf("dir" to unityLibraryDir, "include" to listOf("*.jar"))))
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
