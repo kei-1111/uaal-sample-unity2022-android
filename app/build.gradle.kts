@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "io.github.kei_1111.uaal_sample_unity2022"
+    namespace = "io.github.kei_1111.uaal_sample_unity2022_android"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "io.github.kei_1111.uaal_sample_unity2022"
+        applicationId = "io.github.kei_1111.uaal_sample_unity2022_android"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

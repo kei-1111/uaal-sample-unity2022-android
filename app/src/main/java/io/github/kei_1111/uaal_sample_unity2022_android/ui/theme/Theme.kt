@@ -1,4 +1,4 @@
-package io.github.kei_1111.uaal_sample_unity2022.ui.theme
+package io.github.kei_1111.uaal_sample_unity2022_android.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
