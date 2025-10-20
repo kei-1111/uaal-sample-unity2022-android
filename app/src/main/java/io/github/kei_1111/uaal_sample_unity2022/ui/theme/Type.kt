@@ -1,4 +1,4 @@
-package io.github.kei_1111.uaal_sample.ui.theme
+package io.github.kei_1111.uaal_sample_unity2022.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

@@ -1,4 +1,4 @@
-package io.github.kei_1111.uaal_sample
+package io.github.kei_1111.uaal_sample_unity2022
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

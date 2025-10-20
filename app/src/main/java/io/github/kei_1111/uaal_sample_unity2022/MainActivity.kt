@@ -1,4 +1,4 @@
-package io.github.kei_1111.uaal_sample
+package io.github.kei_1111.uaal_sample_unity2022
 
 import android.os.Bundle
 import android.widget.Toast
@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.viewinterop.AndroidView
 import com.unity3d.player.UnityPlayer
 import com.unity3d.player.UnityPlayer.UnitySendMessage
-import io.github.kei_1111.uaal_sample.ui.theme.UaalsampleTheme
+import io.github.kei_1111.uaal_sample_unity2022.ui.theme.UaalsampleTheme
 import java.lang.ref.WeakReference
 
 class MainActivity : ComponentActivity(), UnityMessageReceiver.Listener {

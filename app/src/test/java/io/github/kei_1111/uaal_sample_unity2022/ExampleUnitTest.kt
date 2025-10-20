@@ -1,4 +1,4 @@
-package io.github.kei_1111.uaal_sample
+package io.github.kei_1111.uaal_sample_unity2022
 
 import org.junit.Test
 

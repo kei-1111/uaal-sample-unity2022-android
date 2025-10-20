@@ -1,6 +1,5 @@
-package io.github.kei_1111.uaal_sample.ui.theme
+package io.github.kei_1111.uaal_sample_unity2022.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

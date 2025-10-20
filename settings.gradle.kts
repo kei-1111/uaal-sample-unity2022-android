@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "uaal-sample"
+rootProject.name = "uaal-sample-unity2022"
 include(":app")
